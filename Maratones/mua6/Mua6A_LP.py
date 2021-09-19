@@ -3,9 +3,14 @@ R="ring"
 S="star"
 UKN="unkown"
 
-n = []
-e = []
+adj=[]
 nodes, edges = map(int, input().split(" "))
+
+for i in range(nodes+1):
+    adj.append([])
 for i in range(edges):
     a,b= map(int,input().split(" "))
-print(str(n+e) + " this is n: {n} and e: {e}")
+    adj[a].append(b)
+    adj[b].append(a)
+print(adj)
+
