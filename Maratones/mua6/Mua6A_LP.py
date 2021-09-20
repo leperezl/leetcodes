@@ -15,16 +15,12 @@ for i in range(edges):
 max=0
 min= 99999999999999999
 count =0
-print(adj)
 for i in (range(nodes)):
     count = len(adj[i])
     if count > max:
         max=count
     if count < min :
         min= count
-
-print(max, ' is max')
-print(min, ' is min')
 
 if max == 2 and min == 1:
     print(B, "topology")
