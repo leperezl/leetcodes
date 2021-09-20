@@ -1,7 +1,7 @@
 B="bus"
 R="ring"
 S="star"
-UKN="unkown"
+UKN="unknown"
 
 adj=[]
 nodes, edges = map(int, input().split(" "))
